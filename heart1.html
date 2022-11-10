@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: grey;
+    }
+    .container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    a{
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+        font-size:30px;
+        font-family: cursive;  
+        animation:effect 0.8s linear infinite;
+    }
+    @keyframes effect {
+        0%{
+            background: linear-gradient(
+                white, red);
+                -webkit-background-clip: text;
+        }
+    }
+    .img{
+        margin: 5em;
+        -webkit-animation: 0.8s infinite heart;
+                animation: 0.8s infinite heart;
+    }
+    @-webkit-keyframes heart {
+        0%{
+            transform: scale(1);
+        }
+        25%{
+            transform: scale(1.1);
+        }
+        40%{
+            transform: scale(1.3);
+        }
+        60%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="2nd/211px-CoeurHumain_svg.gif" alt="heart" class="img">
+    </div>
+    <div>
+        <a href="2nd/heart.html"> click me to love me</a>
+    </div>
+    
+</body>
+</html>
